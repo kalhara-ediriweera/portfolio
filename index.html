@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-cube"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">DEV<span>PORTFOLIO</span></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <div class="hero-content">
+        <h1 class="animated-text">Hi, I'm <span>E P K Kalhara</span></h1>
+        <h2>Software Engineer</h2>
+        <p>Creating immersive digital experiences with code</p></br>
+        <a href="#" class="btn pulse" id="cvDownloadBtn">
+             <span class="btn-text">Download CV</span>
+             <span class="btn-icon">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+             <polyline points="7 10 12 15 17 10"></polyline>
+             <line x1="12" y1="15" x2="12" y2="3"></line>
+             </svg>
+             </span>
+        </a>
+    </div>
+    
+    <div class="profile-container">
+        <div class="profile-orb">
+            <div class="profile-ring"></div>
+            <div class="profile-ring profile-ring-2"></div>
+            <div class="profile-ring profile-ring-3"></div>
+            <div class="profile-photo-wrapper">
+                <img src="./1.png" alt="E P K Kalhara" class="profile-photo floating">
+            </div>
+            <div class="profile-dots"></div>
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Who am I?</h3>
+                <p>I'm a passionate software engineer with expertise in web development, 3D graphics, and creating interactive experiences.</p>
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                    <!-- Add more skills -->
+                </div>
+            </div>
+            <div class="about-3d">
+                <div id="cube-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project cards will be added via JavaScript -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
